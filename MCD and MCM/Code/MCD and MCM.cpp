@@ -17,7 +17,7 @@
 
 int main(int argc, char *argv[])
 {
-	int d;
+	int d,mcd,mcm;
 	Array objArray;
 	printf("Ingrese el tamaño del array:	");
 	scanf("%d",&d);
@@ -25,12 +25,15 @@ int main(int argc, char *argv[])
 	objArray.wax(v,d);
 	objArray.print(v,d);
 	system("pause");
+	
 	printf("\nIngrese los valores del array:\n");
 	objArray.enter(v,d);
 	objArray.print(v,d);
 	system("pause");
-	objArray.print(v,d);
-	//delete (v); // libera memoriapero en mmalloc
+	
+	mcd=objArray.mcd(v,d);
+	printf("El mcd es %d\n", mcd);
+	
 	free (v); //libera el espacio
 	system("pause");
 	return 0;

@@ -87,7 +87,8 @@ void Array::enter(int * v, int dim)
 
 int Array::mcm(int * v, int dim)
 {
-   // TODO : implement
+
+   
 }
 
 ////////////////////////////////////////////////////////////////////////
@@ -101,5 +102,18 @@ int Array::mcm(int * v, int dim)
 
 int Array::mcd(int * v, int dim)
 {
-   // TODO : implement
+    int num, res, mcd;
+ 	for (int i=0;i<dim;i++){
+        if (i == 1) {
+            mcd = *(v+i);
+ 
+        } else {
+            do {
+                res = mcd % *(v+i);
+                mcd = *(v+i);
+                *(v+i) = res;
+            } while (res != 0);
+        }
+	}
+	return mcd;
 }
