@@ -154,12 +154,9 @@ int Array::mcm(int * v, int dim)
 int Array::mcd(int * v, int dim)
 {
 	int num, res, mcd;
-	if ((dim==2)&&((*(v)%*(v+1))!=0)&&((*(v+1)%*(v))!=0)){
-		return 1;
-	}
-	else{
+	mcd=0;
  	for (int i=0;i<dim;i++){
-        if (i == 1) {
+        if (i == 0) {
             mcd = *(v+i);
  
         } else {
@@ -169,7 +166,6 @@ int Array::mcd(int * v, int dim)
                 *(v+i) = res;
             } while (res != 0);
         }
-	}
 	}
 	return mcd;
 }
