@@ -1,0 +1,5 @@
+﻿  test.cpp
+C:\Users\user\Documents\GitHub\Estructura_de_Datos-6547\TDA Exercise\TDA UT\test.cpp(12,3): error C3875: call of non-static member function missing argument list
+C:\Users\user\Documents\GitHub\Estructura_de_Datos-6547\TDA Exercise\TDA UT\test.cpp(12,3): error C3867: 'Process::getDen': non-standard syntax; use '&' to create a pointer to member
+C:\Users\user\Documents\GitHub\Estructura_de_Datos-6547\TDA Exercise\TDA UT\test.cpp(12,3): error C2512: 'testing::AssertionResult': no appropriate default constructor available
+C:\Users\user\Documents\GitHub\Estructura_de_Datos-6547\TDA Exercise\TDA UT\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1\build\native\include\gtest\gtest.h(281,18): message : see declaration of 'testing::AssertionResult'

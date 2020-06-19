@@ -1,7 +1,7 @@
 /***********************************************************************
  * Module:  Operation.h
- * Author:  Chicaiza Jaya Cristopher Jennsy
- * Modified: Wednesday, May 27, 2020 1:05:54 AM
+ * Author:  user
+ * Modified: Friday, June 19, 2020 11:58:15 AM
  * Purpose: Declaration of the class Operation
  ***********************************************************************/
 

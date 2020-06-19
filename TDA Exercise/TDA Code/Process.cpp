@@ -25,11 +25,11 @@ using namespace std;
 // Return:     float
 ////////////////////////////////////////////////////////////////////////
 
-float Process::calculate(float a, float b, float c, float d)
+void Process::calculate(Operation x)
 {
 	Process anws;
-		anws.setNum((a*d)+(b*c));
-		anws.setDen(b*d);
+		anws.setNum((x.getNumA()*x.getDenD())+(x.getDenB()*x.getNumC()));
+		anws.setDen(x.getDenB()*x.getDenD());
 		cout <<"El resultado es	"<<anws.getNum()<<"/"<<anws.getDen()<<endl;
 
 }

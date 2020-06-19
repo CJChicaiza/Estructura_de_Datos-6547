@@ -5,8 +5,12 @@
  * Purpose: Declaration of the class Process
  ***********************************************************************/
 
+
+
 #if !defined(__TDA_Diagram_Process_h)
 #define __TDA_Diagram_Process_h
+
+#include "Operation.h"
 
 class Process
 {
@@ -16,7 +20,7 @@ public:
    float getDen(void);
    void setDen(float newDen);
    Process();
-   float calculate(float a, float b, float c, float d);
+   void calculate(Operation x);
 
 protected:
 private:

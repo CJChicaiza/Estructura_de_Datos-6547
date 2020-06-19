@@ -32,7 +32,7 @@ int main(){
 	
 
 		dim=objEntry.leer("Ingrese el valor de b",2);
-    	istringstream (dim) >> b;
+    	istringstream (dim) >> b ;
 		objOp.setDenB(b);
 	
 
@@ -44,7 +44,7 @@ int main(){
     	istringstream (dim) >> d;
 		objOp.setDenD(d);
 	
-	objProc.calculate(objOp.getNumA(),objOp.getDenB(),objOp.getNumC(),objOp.getDenD());
+	objProc.calculate(objOp);
 	system("pause");
 	
 	return(0);
